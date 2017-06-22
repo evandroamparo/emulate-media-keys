@@ -1,1 +1,1 @@
-# Emulate multimedia keys with EventGhost for keyboards with no media keys
+# Emulate multimedia keys with EventGhost for keyboards without media keys
