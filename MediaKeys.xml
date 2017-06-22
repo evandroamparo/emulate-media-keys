@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EventGhost Version="1722" Guid="{7BC93BC1-FB71-4FAF-82A9-91DC0F60AA5B}" Time="1498156660.21">
+    <Autostart Name="Iniciar Automaticamente" Expanded="True">
+        <Plugin Identifier="Keyboard" Guid="{59CBD10F-C1D8-4ADB-999B-9B76BA360F1F}" File="Keyboard">
+            gAKIhXEALg==
+        </Plugin>
+    </Autostart>
+    <Macro Name="PlayPause" Expanded="True">
+        <Event Name="Keyboard.Pause" />
+        <Action>
+            Window.SendKeys(u'{MediaPlayPause}', False, 2)
+        </Action>
+    </Macro>
+    <Macro Name="Next" Expanded="True">
+        <Event Name="Keyboard.ScrollLock" />
+        <Action>
+            Window.SendKeys(u'{MediaNextTrack}', False, 2)
+        </Action>
+    </Macro>
+    <Macro Name="Previous" Expanded="True">
+        <Event Name="Keyboard.PrintScreen" />
+        <Action>
+            Window.SendKeys(u'{MediaPrevTrack}', False, 2)
+        </Action>
+    </Macro>
+</EventGhost>
