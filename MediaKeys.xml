@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<EventGhost Version="1722" Guid="{952E8346-B7BF-488E-AFFC-9596622AC5AD}" Time="1498479134.32">
+<EventGhost Version="1722" Guid="{B886EEDE-2AF3-4CB2-8237-99257428C322}" Time="1498479452.26">
     <Autostart Name="Iniciar Automaticamente" Expanded="True">
         <Plugin Identifier="Keyboard" Guid="{59CBD10F-C1D8-4ADB-999B-9B76BA360F1F}" File="Keyboard">
             gAKIhXEALg==
@@ -11,28 +11,28 @@
             Window.SendKeys(u'{MediaPlayPause}', False, 2)
         </Action>
     </Macro>
-    <Macro Name="Next" Expanded="True">
+    <Macro Name="Next track" Expanded="True">
         <Event Name="Keyboard.ScrollLock" />
         <Action>
             Window.SendKeys(u'{MediaNextTrack}', False, 2)
         </Action>
     </Macro>
-    <Macro Name="Previous" Expanded="True">
+    <Macro Name="Previous track" Expanded="True">
         <Event Name="Keyboard.PrintScreen" />
         <Action>
             Window.SendKeys(u'{MediaPrevTrack}', False, 2)
         </Action>
     </Macro>
-    <Macro Name="Change Master Volume: 2.00 %" Expanded="True">
+    <Macro Name="Volume down" Expanded="True">
         <Event Name="Keyboard.Ctrl+Alt" />
         <Action>
-            System.ChangeMasterVolumeBy(-2.0, u'Primary Sound Driver')
+            Window.SendKeys(u'{VolumeDown}', False, 2)
         </Action>
     </Macro>
-    <Macro Name="Change Master Volume: 2.00 %" Expanded="True">
+    <Macro Name="Volume up" Expanded="True">
         <Event Name="Keyboard.Apps" />
         <Action>
-            System.ChangeMasterVolumeBy(2.0, u'Primary Sound Driver')
+            Window.SendKeys(u'{VolumeUp}', False, 2)
         </Action>
     </Macro>
 </EventGhost>
