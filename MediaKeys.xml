@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<EventGhost Version="1722" Guid="{7BC93BC1-FB71-4FAF-82A9-91DC0F60AA5B}" Time="1498156660.21">
+<EventGhost Version="1722" Guid="{952E8346-B7BF-488E-AFFC-9596622AC5AD}" Time="1498479134.32">
     <Autostart Name="Iniciar Automaticamente" Expanded="True">
         <Plugin Identifier="Keyboard" Guid="{59CBD10F-C1D8-4ADB-999B-9B76BA360F1F}" File="Keyboard">
             gAKIhXEALg==
@@ -21,6 +21,18 @@
         <Event Name="Keyboard.PrintScreen" />
         <Action>
             Window.SendKeys(u'{MediaPrevTrack}', False, 2)
+        </Action>
+    </Macro>
+    <Macro Name="Change Master Volume: 2.00 %" Expanded="True">
+        <Event Name="Keyboard.Ctrl+Alt" />
+        <Action>
+            System.ChangeMasterVolumeBy(-2.0, u'Primary Sound Driver')
+        </Action>
+    </Macro>
+    <Macro Name="Change Master Volume: 2.00 %" Expanded="True">
+        <Event Name="Keyboard.Apps" />
+        <Action>
+            System.ChangeMasterVolumeBy(2.0, u'Primary Sound Driver')
         </Action>
     </Macro>
 </EventGhost>
